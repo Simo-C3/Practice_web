@@ -12,9 +12,9 @@ body {
 .paper {
     position: absolute;
     height: 700px;
-    width: 600px;
+    width: 1000px;
     background: rgba(255,255,255,0.9);
-    margin: -275px -225px;
+    margin: -350px -505px;
     left: 50%;
     top: 50%;
     box-shadow: 0px 0px 5px 0px #888;
@@ -23,7 +23,7 @@ body {
 .paper::before {
     content: '';
     position: absolute;
-    left: 45px;
+    left: 500px;
     height: 100%;
     width: 2px;
     background: rgba(255,0,0,0.4);
@@ -41,7 +41,7 @@ body {
     top: 65px;
     left: 55px;
     bottom: 10px;
-    right: 10px;
+    right: 530px;
     line-height: 25px;
     overflow: hidden;
     outline: none;
@@ -52,40 +52,21 @@ body {
     width: 560px;
     height: 315px;
     font-family: 'MyFont';
-
 }
+
+.image-tile {
+    width: 60%;
+    height: 80%}
 
 .video {
     display: inline;
 }
 
 .icon, .image, .video {
-    width: 560px;
-    height: 315px;
+    size: 100%;
 }
 
 .self, .hobby1, .hobby2 {
     display: flex;
-}
-
-.holes {
-    position: absolute;
-    left: 10px;
-    height: 25px;
-    width: 25px;
-    background: lightgoldenrodyellow;
-    border-radius: 50%;
-    box-shadow: inset 0px 0px 2px 0px #888;
-}
-
-.hole-top {
-    top: 10%;
-}
-
-.hole-middle {
-    top: 50%;
-}
-
-.hole-bottom {
-    bottom: 10%;
+    height: 200px;
 }
