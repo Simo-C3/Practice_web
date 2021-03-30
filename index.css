@@ -5,8 +5,19 @@ a {
 
 .intro {
     list-style-type: none;
+    width: 560px;
+    height: 315px;
 }
 
-.self {
+.video {
+    display: inline;
+}
+
+.icon, .image, .video {
+    width: 560px;
+    height: 315px;
+}
+
+.self, .hobby1, .hobby2 {
     display: flex;
 }
