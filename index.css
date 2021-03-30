@@ -50,7 +50,7 @@ body {
 .sheet2 {
     position: absolute;
     top: 65px;
-    left: 55px;
+    left: 530px;
     bottom: 10px;
     right: 30px;
     line-height: 25px;
@@ -89,4 +89,5 @@ body {
     font-family: "MyFont";
     height: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
