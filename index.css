@@ -7,6 +7,6 @@ a {
     list-style-type: none;
 }
 
-.icon, .intro {
-    display: inline-block;
+.self {
+    display: flex;
 }
