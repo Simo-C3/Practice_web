@@ -2,3 +2,11 @@ a {
     font-size: large;
     display: block;
 }
+
+.intro {
+    list-style-type: none;
+}
+
+.icon, .intro {
+    display: inline-block;
+}
