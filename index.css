@@ -126,3 +126,9 @@ body {
         opacity: 0;
     }
 }
+
+/* Hide Loading Block */
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
