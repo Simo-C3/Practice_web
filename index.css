@@ -106,8 +106,8 @@ body {
     height: 100vh;
     transition: all 1s;
     background-color: #0bd;
-    overflow: hidden;
     z-index: 1;
+    position: absolute;
 }
 
 .spinner {
