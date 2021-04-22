@@ -39,7 +39,7 @@ body {
 .sheet1 {
     position: absolute;
     top: 65px;
-    left: 55px;
+    left: 30px;
     bottom: 10px;
     right: 530px;
     line-height: 25px;
@@ -58,7 +58,7 @@ body {
     outline: none;
 }
 
-.intro1, .intro2, .intro3 {
+.intro1, .intro2 {
     list-style-type: none;
     width: 50%;
     height: 100%;
@@ -73,59 +73,77 @@ body {
     padding-right: 20px;
 }
 
+.intro3 {
+    padding-top: 25px;
+    list-style-type: none;
+    font-family: 'MyFont';
+}
+
 .image-tile {
     width: 50%;
     height: 100%;
 }
 
 .video {
-    display: inline;
+    width: 100%;
+    height: 40%;
 }
 
-.icon, .image, .video {
+.icon, .image {
     width: 100%;
 }
 
-.self, .hobby1, .hobby2 {
+.image {
+    margin-top: 10px;
+}
+
+.self, .hobby1 {
     display: flex;
     height: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 75px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.hobby2 {
+    margin-top: 25px;
 }
 
 .title {
     font-family: "MyFont";
     height: 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
-/* ローディング画面 */
+/* Loading Block */
 #loading {
     width: 100vw;
     height: 100vh;
-    transition: all 1s;
-    background-color: #0bd;
-    z-index: 1;
-    position: absolute;
+    transition: all 0.3s;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
-
 .spinner {
-    width: 100px;
-    height: 100px;
-    margin: 200px auto;
-    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    margin: calc(50vh - 250px) auto;
+    background-image: url(C3logo.png);
+    background-size: 500px;
+    background-repeat:  no-repeat;
     border-radius: 100%;
     animation: sk-scaleout 1.0s infinite ease-in-out;
 }
-
-/* ローディングアニメーション */
+/* Loading Animation */
 @keyframes sk-scaleout {
     0% {
-        transform: scale(0);
-    } 100% {
-        transform: scale(1.0);
-        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
